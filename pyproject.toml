@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "image-classifier"
+version = "0.1.0"
+description = "A sample machine learning project that classifies images"
+authors = ["Manasi Deshpande"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"  # Adjust to your preferred Python version
+numpy = "^1.24"
+opencv-python = "^4.8"
+scikit-learn = "^1.4"
+torch = "^2.7.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+train = "train:main"
+evaluate = "evaluate:main"
+
